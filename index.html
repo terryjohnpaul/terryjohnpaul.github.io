@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel='stylesheet prefetch' href='https://www.w3schools.com/lib/w3.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+  <!-- Author: Terry john paul -->
+<!-- Date: sep 18, 2017 -->
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <ul class="w3-navbar" id="myNavbar">
+    <li><a href="#" class="w3-padding-large">Terry John Paul</a></li>
+    <li class="w3-hide-small w3-right">
+      <a href="#contact" class="w3-padding-large">Contact</a>
+    </li>
+    <li class="w3-hide-small w3-right">
+      <a href="#portfolio" class="w3-padding-large">Portfolio</a>
+    </li>
+    <li class="w3-hide-small w3-right">
+      <a href="#about" class="w3-padding-large">About</a>
+    </li>
+  </ul>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-opacity w3-display-container">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <h1 class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">TERRY JOHN <span class="w3-hide-small">PAUL</span></h1>
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h2 class="w3-center">ABOUT ME</h2>
+  <p class="w3-center"><em>I love Programming</em></p>
+  <p>I am Terry John Paul. I am a dreamer whose dream is to build awesome things in the future and to contribute something useful to the world.But hey this website symbolizes that I contribute something in the world.</p>
+  <!--  Profile Picture and Description  -->
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-section">
+      <img src="https://avatars1.githubusercontent.com/u/29544003?v=4&u=716fff2d76e41b8be604a4af8113a634b49875e7&s=400" id="profile" class="w3-circle" alt="Photo of Me">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-section">
+      <p>By the help of some online courses I will be a Full Stack Web Developer soon!</p>
+    </div>
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container" id="portfolio">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-light-grey w3-wide">PORTFOLIO</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <h2 class="w3-center">MY INSPIRATIONS</h2>
+  <p class="w3-center"><em>Here are some of Famous personalites inspired me.<br> Click on the images to make them bigger</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="http://www.kidsworldfun.com/images/great-personalities/cv-raman.jpg" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="http://3.bp.blogspot.com/-_dM99cpjVwY/UmOrlZdsZyI/AAAAAAAAPgo/LkRfTStcwe0/s1600/OgAAAFcgiJl7Uns6CAh11lW2AOEHQIGQ65-BK0p_JFM6KM5uZ8G5Ojj3eYfIhRF_L9gpJ0L43pk4pytSdgBO8lO15SwAm1T1U.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="http://dbsjeyaraj.com/dbsj/wp-content/uploads/2016/02/MGR-T.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="http://www.quiz-magic.com/mediaservice/getImage.aspx?img=personality/Q7Steve.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="http://www.transcurrents.com/images/Jayalalitha_TC_0223.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="https://vignette3.wikia.nocookie.net/nonciclopedia/images/0/0b/Abramo_Lincoln.jpg/revision/latest?cb=20110626201104" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="http://images4.fanpop.com/image/photos/18500000/che-guevara-che-guevara-18542681-337-450.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="http://www.wondersandmarvels.com/wp-content/uploads/2014/08/369px-Dr._Bhim_Rao_Ambedkar-230x300.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-closebtn w3-hover-red w3-text-white w3-xxxlarge w3-container w3-display-topright">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" style="max-width:100%">
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container" id="contact">
+  <div class="w3-display-middle">
+    <h2 class="w3-xxlarge w3-text-light-grey w3-wide">CONTACT</h2>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64">
+  <h3 class="w3-center">WHERE I WORK</h3>
+  <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+  <address class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!-- Add Google Maps -->
+      <div id="googleMap" class="w3-round-large"></div>
+    </div>
+    <div class="w3-col m8 w3-container w3-section">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker w3-hover-text-black" style="width:30px"></i> Gandhipuram,Coimbatore,Tamil nadu,india<br>
+        <i class="fa fa-phone w3-hover-text-black" style="width:30px"></i> Phone: 8680997595<br>
+        <i class="fa fa-envelope w3-hover-text-black" style="width:30px"> </i> Email: terryjohnpaul20@gmail.com<br>
+      </div>
+      <p>Swing by for a cup of coffee, or leave me a note:</p>
+      <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+        <div class="w3-half">
+          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Name">
+        </div>
+        <div class="w3-half">
+          <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Email">
+        </div>
+      </div>
+      <input class="w3-input w3-border w3-hover-light-grey" type="text" placeholder="Comment">
+      <a href="mailto:terryjohnpaul20" class="w3-btn w3-section w3-right">SEND</a>
+    </div>
+  </address>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-dark-grey w3-padding-48 w3-hover-black cf">
+  <div class="w3-half">
+    <a target="_blank" href="https://www.freecodecamp.org/terryjohnpaul">
+      <i class="fa fa-fire fa-2x"></i>
+    </a>
+    <a target="_blank" href="https://www.facebook.com/terryjohnpaul87">
+      <i class="fa fa-facebook fa-2x"></i>
+    </a>
+    <a target="_blank" href="https://codepen.io/terryjohn">
+      <i class="fa fa-twitter fa-2x"></i>
+    </a>
+    <a target="_blank" href="https://twitter.com/terryjohnpaul20">
+       <i class="fa fa-instagram fa-2x"></i>
+    </a>
+    <a target="_blank" href="https://www.instagram.com/terry_lonely_king/">
+      <i class="fa fa-codepen fa-2x"></i>
+    </a>
+  </div>
+  <p class="w3-half">Made with <span class="heart-icon">❤</span> by P.Terry John Paul  <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity"></a></p>
+</footer>
+
+<script src="https://www.gstatic.com/firebasejs/4.3.1/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCmijfglUM61N6dZ1UhwW7naaxJ5UzaN9I",
+    authDomain: "my-portfolio-2d1e4.firebaseapp.com",
+    databaseURL: "https://my-portfolio-2d1e4.firebaseio.com",
+    projectId: "my-portfolio-2d1e4",
+    storageBucket: "my-portfolio-2d1e4.appspot.com",
+    messagingSenderId: "376732245122"
+  };
+  firebase.initializeApp(config);
+</script>
+  <script src='https://maps.googleapis.com/maps/api/js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.4/SmoothScroll.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>
